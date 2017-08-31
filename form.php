@@ -25,7 +25,9 @@ catch(PDOException $error)
 
 //QUERY PARA INGRESAR DATOS
 
-$query = "INSERT INTO datos(Datos) VALUES ('Maria')";
+$nombre = $_POST['nombre'];
+
+$query = "INSERT INTO datos(Datos) VALUES ('$nombre')";
 
 $connect->exec($query);
 
