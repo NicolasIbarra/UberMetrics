@@ -33,4 +33,5 @@ $connect->exec($query);
 
 echo "Dato fue insertado correctamente";
 
+
 ?>
