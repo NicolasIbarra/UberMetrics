@@ -1,7 +1,5 @@
 <?php
 
-function connectData() {
-
 $host = "localhost";
 $username = "root";
 $password = "root";
@@ -21,8 +19,6 @@ catch(PDOException $error)
 
 {
 	echo $error->getMessage();
-}
-
 }
 
 ?>

@@ -9,10 +9,4 @@ function cssSheet() {
 	echo '<link rel="stylesheet" type="text/css" href="style.css">';
 }
 
-function dailyCalc() {
-	require 'connect.php';
-	connectData("hello");
-
-}
-
 ?>
