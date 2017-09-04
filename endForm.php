@@ -22,15 +22,3 @@ catch(PDOException $error)
 {
 	echo $error->getMessage();
 }
-
-//QUERY PARA INGRESAR DATOS
-
-$query = "INSERT INTO Kilometraje(score, fecha, tiempo) VALUES (101010, NOW(), NOW())";
-
-$connect->exec($query);
-
-echo "Dato fue insertado correctamente";
-echo "<br />";
-
-
-?>

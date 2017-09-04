@@ -26,9 +26,8 @@ catch(PDOException $error)
 //QUERY PARA INGRESAR DATOS
 
 $kmIni = $_POST['kmIni'];
-$type = $_POST['typeOf'];
 
-$iniQuery = "INSERT INTO Kilometraje(score, fecha, tiempo, type) VALUES ('$kmIni', NOW(), NOW(), '$type')";
+$iniQuery = "INSERT INTO Kilometraje(score, fecha, tiempo, type) VALUES ('$kmIni', NOW(), NOW(), 'end')";
 
 $connect->exec($iniQuery);
 
