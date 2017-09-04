@@ -25,13 +25,15 @@ catch(PDOException $error)
 
 //QUERY PARA INGRESAR DATOS
 
-$nombre = $_POST['nombre'];
+$kmIni = $_POST['kmIni'];
+$type = $_POST['typeOf'];
 
-$query = "INSERT INTO datos(Datos) VALUES ('$nombre')";
+$iniQuery = "INSERT INTO Kilometraje(score, fecha, tiempo, type) VALUES ('$kmIni', NOW(), NOW(), '$type')";
 
-$connect->exec($query);
+$connect->exec($iniQuery);
 
 echo "Dato fue insertado correctamente";
-
+echo "<br />";
+echo "No olvides ingresar la información de término";
 
 ?>
