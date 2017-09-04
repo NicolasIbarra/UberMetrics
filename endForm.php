@@ -36,5 +36,6 @@ echo "<br />";
 echo "Felicitaciones! Has terminado tu sesión.";
 echo "<br />";
 echo '<a href="end.php"><button>Iniciar Nueva Sesión</button></a>';
+echo "<br />";
 
 ?>

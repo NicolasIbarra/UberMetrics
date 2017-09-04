@@ -1,12 +1,5 @@
 <html>
 
-<?php
-
-include 'function.php';
-cssSheet();
-
-?>
-
 	<h1>Uber Analytics</h1>
 	<h3>Inicio sesión</h3>
 
