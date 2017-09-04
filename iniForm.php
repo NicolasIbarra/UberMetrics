@@ -23,4 +23,20 @@ echo "Haz click en terminar cuando finalices tu último viaje";
 echo "<br />";
 echo '<a href="end.php"><button>Terminar</button></a>';
 
+
+//ESTE CÓDIGO TENGO QUE TRABAJARLO PORQUE NO ESTÁ FUNCIONANDO
+//EL PROBLEMA ES CON EL CÓDIGO PHP, PORQUE EL SQL FUNCIONA A LA PERFECCIÓN
+
+//SELECT sum(till_amount)
+//FROM Cash
+//WHERE time>='16:50:22'
+
+//$sql = "SELECT sum(score) FROM Kilometraje";
+
+//$ggg = $connect->exec($sql);
+
+//echo $ggg;
+
+// -------------------------------------------------------
+
 ?>
