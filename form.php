@@ -34,6 +34,8 @@ $connect->exec($iniQuery);
 
 echo "Dato fue insertado correctamente";
 echo "<br />";
-echo "No olvides ingresar la información de término";
+echo "Haz click en terminar cuando finalices tu último viaje";
+echo "<br />";
+echo '<a href="termino.php"><button>Terminar</button></a>';
 
 ?>
