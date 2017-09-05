@@ -5,20 +5,11 @@ $username = "root";
 $password = "root";
 $database = "uber";
 
-try {
-
-	$connect = new PDO("mysql:host=$host;dbname=$database", $username, $password);
-
-	$connect->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
-	//echo "Conectado Exitosamente";
-
-}
-
-catch(PDOException $error)
-
-{
-	echo $error->getMessage();
-}
-
+$connect = mysqli_connect($host, $username, $password, $database);
+if(mysqli_connect_errno()) {
+	die ('Database connection failed: ' .
+		mysqli_connect_error() . 
+		" (" . mysqli_connect_errno() . ")"
+		);
+	}
 ?>
