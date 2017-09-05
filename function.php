@@ -9,4 +9,8 @@ function cssSheet() {
 	echo '<link rel="stylesheet" type="text/css" href="style.css">';
 }
 
+function imprime() {
+	echo "imprime";
+}
+
 ?>
