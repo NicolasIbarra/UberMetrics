@@ -8,13 +8,9 @@ print($hoy);
 echo "<br />";
 echo "Ayer hiciste: ";
 $ayer = resumenAyer(); //24000
-
-echo "<br />";
-
-print($hoy+$ayer);
-echo "<br />";
 print($ayer);
 
+echo "<br />";
 
 ?>
 
@@ -23,10 +19,13 @@ print($ayer);
 
 <?php
 
-//ESTA PARTE NO ESTÁ FUNCIONANDO. QUIERO COMPARAR LA VARIABLE $hoy CON LA $ayer PARA ESTABLECER CONDICIONES EN EL CÓDIGO DE ABAJO, PERO POR ALGÚN MOTIVO CONSIDERA QUE LOS VALORES SON IGUALES, SIENDO QUE IMPRIME DIFERENTES NÚMEROS (VER EN BROWSER)
-
-//TENGO QUE CACHAR QUE TIPO DE NÚMERO TIRA LA FUNCION resumenDia() y resumenAyer().
-
+if($hoy > $ayer) {
+	echo "Bien! Superaste tu marca de ayer";
+} elseif ($hoy == $ayer) {
+	echo "Vamos, una más y a la casa!";
+} elseif ($hoy < $ayer) {
+	echo "Te faltan ordenes";
+}
 
 mysqli_free_results($result);
 mysqli_close($connect);
