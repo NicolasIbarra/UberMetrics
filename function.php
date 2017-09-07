@@ -21,6 +21,7 @@ function resumenDia() {
 	
 	//2do PASO: HACER QUERY
 	$query = "SELECT sum(till_amount) FROM Cash ";
+	/////////////////////// ESTA ES LA FORMA EN QUE SE EXPRESA "HOY"
 	$query .= "WHERE date >=CURDATE()";
 	$result = mysqli_query($connect, $query);
 
@@ -39,15 +40,16 @@ function resumenAyer() {
 	
 	//2do PASO: HACER QUERY
 	$query = "SELECT sum(till_amount) FROM Cash ";
+	/////////////////////// ESTA ES LA FORMA EN QUE SE EXPRESA "AYER"
 	$query .= "WHERE date = DATE_ADD(CURDATE(), INTERVAL -1 DAY)";
 	$result = mysqli_query($connect, $query);
 
 	//3er PASO: LOOP CON RESULTADOS
-	$final_result2 = 0;
+	$final_result = 0;
 	while($row = mysqli_fetch_assoc($result)) {
-		$final_result2 = $row["sum(till_amount)"];
+		$final_result = $row["sum(till_amount)"];
 	}
-	return $final_result2;
+	return $final_result;
 }
 
 function backStart() {

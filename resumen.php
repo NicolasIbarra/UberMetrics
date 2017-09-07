@@ -2,12 +2,12 @@
 
 include 'function.php';
 
-echo "Hoy has hecho: ";
-$hoy = resumenDia(); //57442
+echo "Hoy has hecho: $ ";
+$hoy = number_format(resumenDia()); //57442
 print($hoy);
 echo "<br />";
-echo "Ayer hiciste: ";
-$ayer = resumenAyer(); //24000
+echo "Ayer hiciste: $ ";
+$ayer = number_format(resumenAyer()); //24000
 print($ayer);
 
 echo "<br />";
