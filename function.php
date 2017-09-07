@@ -21,7 +21,7 @@ function resumenDia() {
 	
 	//2do PASO: HACER QUERY
 	$query = "SELECT sum(till_amount) FROM Cash ";
-	$query .= "WHERE date >='2017-09-05'";
+	$query .= "WHERE date >=CURDATE()";
 	$result = mysqli_query($connect, $query);
 
 	//3er PASO: LOOP CON RESULTADOS
@@ -39,7 +39,7 @@ function resumenAyer() {
 	
 	//2do PASO: HACER QUERY
 	$query = "SELECT sum(till_amount) FROM Cash ";
-	$query .= "WHERE date <'2017-09-05'";
+	$query .= "WHERE date = DATE_ADD(CURDATE(), INTERVAL -1 DAY)";
 	$result = mysqli_query($connect, $query);
 
 	//3er PASO: LOOP CON RESULTADOS
