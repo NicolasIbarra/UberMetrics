@@ -28,7 +28,15 @@ if($hoy > $ayer) {
 	echo "Te faltan ordenes";
 	}
 
-// -------------------------------------------
+?>
+
+<br>
+
+<?php
+
+// BOTON VOLVER INICIO
+
+backStart();
 
 mysqli_free_results($result);
 mysqli_close($connect);

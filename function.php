@@ -50,4 +50,8 @@ function resumenAyer() {
 	return $final_result2;
 }
 
+function backStart() {
+	echo "<a href='ini.php'><button>Ir al Inicio</button></a>";
+}
+
 ?>
