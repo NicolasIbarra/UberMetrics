@@ -50,14 +50,4 @@ function resumenAyer() {
 	return $final_result2;
 }
 
-function cuantoFalta() {
-	if($hoy > $ayer) {
-	echo "Bien! Superaste tu marca de ayer";
-		} elseif ($hoy == $ayer) {
-	echo "Vamos, una más y a la casa!";
-		} elseif ($hoy < $ayer) {
-	echo "Te faltan ordenes";
-	}
-}
-
 ?>

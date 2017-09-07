@@ -18,6 +18,6 @@ echo "Dato fue insertado correctamente";
 echo "<br />";
 echo "Haz click en terminar cuando finalices tu último viaje";
 echo "<br />";
-echo '<a href="end.php"><button>Terminar</button></a>';
+echo '<a href="end.php"><button>check stats</button></a>';
 
 ?>

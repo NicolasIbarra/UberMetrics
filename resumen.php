@@ -18,8 +18,17 @@ echo "<br />";
 
 <?php
 
-// Cálculo sobre cuánto me falta para completar hoy
-cuantoFalta();
+// CONDICIONA Cuánto falta?
+
+if($hoy > $ayer) {
+	echo "Bien! Superaste tu marca de ayer";
+		} elseif ($hoy == $ayer) {
+	echo "Vamos, una más y a la casa!";
+		} elseif ($hoy < $ayer) {
+	echo "Te faltan ordenes";
+	}
+
+// -------------------------------------------
 
 mysqli_free_results($result);
 mysqli_close($connect);
