@@ -46,7 +46,39 @@ function get_buttons() {
 
 			?>
 		</div>
+		<hr>
 	</form>
+
+	<div id="container1">
+
+	<form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
+		<input type="text" name="name" />
+		<input type="submit" name="submit" id="submit" />
+	</form>
+		<?php
+			$name = $_POST['name'];
+			if(isset($_POST['submit'])) {
+				echo "Hello $name";
+			}
+		?>
+	</div>
+
+	<hr>
+
+	<div id="container2">
+
+	<form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
+		<input type="text" name="edad" />
+		<input type="submit" name="enviar" id="enviar" />
+	</form>
+		<?php
+			$edad = $_POST['edad'];
+			if(isset($_POST['enviar'])) {
+				echo "Hello $edad";
+			}
+		?>
+	</div>
+	
 </body>
 
 </html>
