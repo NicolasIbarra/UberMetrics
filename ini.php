@@ -8,9 +8,9 @@ headWeb();
 ?>
 
 	<body>
-		<div id="container" style="background-color: yellow;">
-			<h1>Uber Analytics</h1>
-			<h3>Inicio sesión</h3>
+		<div id="container">
+			<h1>Uberytics</h1>
+			<h3>Inicio Sesión</h3>
 
 			<form action="iniForm.php" method="post">
 				<input type="text" name="kmIni" placeholder="km inicial..." />
@@ -21,5 +21,5 @@ headWeb();
 			</form>
 		</div>
 	</body>
-	
+
 </html>

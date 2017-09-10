@@ -18,12 +18,12 @@ $resultK = mysqli_query($connect, $iniQuery);
 $resultC = mysqli_query($connect, $cashQuery);
 
 
-echo "<div id='container'>";
+echo "<body><div id='container'>";
 echo "Dato fue insertado correctamente";
 echo "<br />";
 echo "Haz click en 'Finalizar' cuando finalices tu último viaje";
 echo "<br />";
 echo '<a href="end.php"><button>Finalizar</button></a>';
-echo "</div>";
+echo "</div></body>";
 
 ?>
