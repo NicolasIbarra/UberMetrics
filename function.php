@@ -1,18 +1,9 @@
 <?php
 
-function mainMenu() {
-	echo '<a href="hello.php"><button>Hello</button></a>';
-	echo '<a href="toy.php"><button>Toy</button></a>';
-}
-
-function cssSheet() {
-	echo '<link rel="stylesheet" type="text/css" href="style.css">';
-}
-
-function imprime() {
-	echo "imprime";
-	echo "<br />";
-	echo "Hola";
+function headWeb() {
+	echo "<link rel='stylesheet' href='style.css' type='text/css' />";
+	echo "<meta charset='UTF-8'>";
+	echo "<script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=' crossorigin='anonymous'></script>";
 }
 
 function resumenDia() {

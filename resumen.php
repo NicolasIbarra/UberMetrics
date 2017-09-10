@@ -3,11 +3,11 @@
 include 'function.php';
 
 echo "Hoy has hecho: $ ";
-$hoy = number_format(resumenDia()); //57442
+$hoy = number_format(resumenDia());
 print($hoy);
 echo "<br />";
 echo "Ayer hiciste: $ ";
-$ayer = number_format(resumenAyer()); //24000
+$ayer = number_format(resumenAyer());
 print($ayer);
 
 echo "<br />";
@@ -20,12 +20,16 @@ echo "<br />";
 
 // CONDICIONA Cuánto falta?
 
+if ($hoy == 0 && $ayer == 0) {
+	echo "No has trabajdo mucho estos días";
+}
+
 if($hoy > $ayer) {
 	echo "Bien! Superaste tu marca de ayer";
-		} elseif ($hoy == $ayer) {
+		} elseif ($hoy == $ayer && $hoy != 0 && $ayer != 0) {
 	echo "Vamos, una más y a la casa!";
 		} elseif ($hoy < $ayer) {
-	echo "Te faltan ordenes";
+	echo "Te faltan algunas ordenes por completar";
 	}
 
 ?>
