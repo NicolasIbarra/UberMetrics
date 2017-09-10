@@ -2,6 +2,9 @@
 
 //CONNECT DATABASE
 require 'connect.php';
+require 'function.php';
+
+headWeb();
 
 //QUERY PARA INGRESAR DATOS
 
@@ -14,10 +17,13 @@ $cashQuery = "INSERT INTO Cash(till_amount, date, time) VALUES ('$cashIni', NOW(
 $resultK = mysqli_query($connect, $iniQuery);
 $resultC = mysqli_query($connect, $cashQuery);
 
+
+echo "<div id='container'>";
 echo "Dato fue insertado correctamente";
 echo "<br />";
-echo "Haz click en terminar cuando finalices tu último viaje";
+echo "Haz click en 'Finalizar' cuando finalices tu último viaje";
 echo "<br />";
-echo '<a href="end.php"><button>check stats</button></a>';
+echo '<a href="end.php"><button>Finalizar</button></a>';
+echo "</div>";
 
 ?>

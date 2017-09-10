@@ -1,6 +1,7 @@
 #container {
 	max-width: 300px;
 	margin: auto;
+	text-align: center;
 }
 
 #boton {
@@ -12,4 +13,8 @@
 
 #boton.highlight {
 	background-color: red;
+}
+
+form {
+	margin: auto;
 }

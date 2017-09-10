@@ -11,10 +11,6 @@ $endQuery = "INSERT INTO Kilometraje(score, fecha, tiempo, type) VALUES ('$kmEnd
 $resultK = mysqli_query($connect, $endQuery);
 $resultE = mysqli_query($connect, $kmEnd);
 
-echo "<div id='container'>Dato fue insertado correctamente</div>";
-echo "<br />";
-echo "Felicitaciones! Has terminado tu sesión.";
-
 ?>
 
 <html>
@@ -24,6 +20,12 @@ echo "Felicitaciones! Has terminado tu sesión.";
 
 	<body>
 		<div id="container">
+
+			<?php
+				echo "<div id='container'>Dato fue insertado correctamente</div>";
+				echo "<br />";
+				echo "Felicitaciones! Has terminado tu sesión.";
+			?>
 			<!--Código jQuery -->
 				<script>
 					$(document).ready(function() {
@@ -36,13 +38,13 @@ echo "Felicitaciones! Has terminado tu sesión.";
 					});
 				</script>
 			<button id="boton">Ver Resumen</button>
-			<div id="resumen">
+			<div id="resumen" style="display: none">
 				<?php resumenTotal(); ?>
 			</div>
 			<div id="iniciar">
 				<?php 
 				echo "<br />";
-				echo '<a href="end.php"><button>Iniciar Nueva Sesión</button></a>';
+				echo '<a href="ini.php"><button>Iniciar Nueva Sesión</button></a>';
 				echo "<br />";
 				?>
 			</div>
