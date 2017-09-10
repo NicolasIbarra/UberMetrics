@@ -1,0 +1,15 @@
+#container {
+	max-width: 300px;
+	margin: auto;
+}
+
+#boton {
+	position: relative;
+	width: 100%;
+	background-color: blue;
+	color: white;
+}
+
+#boton.highlight {
+	background-color: red;
+}

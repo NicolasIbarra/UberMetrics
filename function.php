@@ -49,21 +49,21 @@ function backStart() {
 
 function resumenTotal() {
 
-	//CÁLCULO HOY
+	/////////// CÁLCULO HOY
 	echo "Hoy has hecho: $ ";
 	$hoy = number_format(resumenDia());
 	print($hoy);
 
 	echo "<br />";
 
-	// CÁLCULO AYER
+	/////////// CÁLCULO AYER
 	echo "Ayer hiciste: $ ";
 	$ayer = number_format(resumenAyer());
 	print($ayer);
 
 	echo "<br />";
 
-	// CONDICIONAL CUÁNTO FALTA?
+	/////////// CONDICIONAL CUÁNTO FALTA?
 
 	if ($hoy == 0 && $ayer == 0) {
 		echo "No has trabajado mucho estos días";
@@ -79,8 +79,7 @@ function resumenTotal() {
 			} elseif ($hoy < $ayer) {
 		echo "Te faltan algunas ordenes por completar";
 		echo "<br />";
-		}
-
+	}
 }
 
 ?>
