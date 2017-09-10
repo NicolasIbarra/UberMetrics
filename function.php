@@ -47,4 +47,40 @@ function backStart() {
 	echo "<a href='ini.php'><button>Ir al Inicio</button></a>";
 }
 
+function resumenTotal() {
+
+	//CÁLCULO HOY
+	echo "Hoy has hecho: $ ";
+	$hoy = number_format(resumenDia());
+	print($hoy);
+
+	echo "<br />";
+
+	// CÁLCULO AYER
+	echo "Ayer hiciste: $ ";
+	$ayer = number_format(resumenAyer());
+	print($ayer);
+
+	echo "<br />";
+
+	// CONDICIONAL CUÁNTO FALTA?
+
+	if ($hoy == 0 && $ayer == 0) {
+		echo "No has trabajado mucho estos días";
+		echo "<br />";
+	}
+
+	if ($hoy > $ayer) {
+		echo "Bien! Superaste tu marca de ayer";
+		echo "<br />";
+			} elseif ($hoy == $ayer && $hoy != 0 && $ayer != 0) {
+		echo "Vamos, una más y a la casa!";
+		echo "<br />";
+			} elseif ($hoy < $ayer) {
+		echo "Te faltan algunas ordenes por completar";
+		echo "<br />";
+		}
+
+}
+
 ?>
