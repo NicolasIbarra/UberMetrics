@@ -2,6 +2,7 @@
 
 function headWeb() {
 	echo "<link rel='stylesheet' href='style.css' type='text/css' />";
+	echo "<link rel='stylesheet' href='buttons.css' type='text/css' />";
 	echo "<meta charset='UTF-8'>";
 	echo "<script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=' crossorigin='anonymous'></script>";
 	echo "<link href='https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i' rel='stylesheet'>";
@@ -52,28 +53,28 @@ function backStart() {
 function resumenTotal() {
 
 	/////////// CÁLCULO HOY
-	echo "<p style='font-size: 11px;''>Hoy has hecho</p>";
+	echo "<p style='font-size: 11px; color: #696969;'>Hoy has hecho</p>";
 	$hoy = number_format(resumenDia());
 	print "<h1>$ $hoy</h1>";
 
 
 	/////////// CÁLCULO AYER
-	echo "Ayer hiciste: $ ";
+	echo "<text style='color: #696969;'>Ayer hiciste: $ ";
 	$ayer = number_format(resumenAyer());
-	print "<text style='font-weight: 700;'>$ayer</text>";
+	print "<text style='font-weight: 700; color: #696969;'>$ayer</text>";
 
 	echo "<br />";
+	echo "<hr style='position: relative; width: 70%; margin-top: 20px; margin-bottom: 8px;'>";
 
 	/////////// CONDICIONAL CUÁNTO FALTA?
 
 	if ($hoy == 0 && $ayer == 0) {
-		echo "<p style='margin-top: 7px; font-weight: 700;'>No has trabajado mucho estos días</p>";
+		echo "<p class='parrafo' style='margin-top: 7px; margin-bottom: 0; font-weight: 700;'>No has trabajado mucho estos días</p>";
 		echo "<br />";
 	}
 
 	if ($hoy > $ayer) {
-		echo "<p style='margin-top: 7px; font-weight: 700;'>Bien! Superaste tu marca de ayer</p>";
-		echo "<br />";
+		echo "<p class='parrafo' style='margin-top: 10px; font-weight: 700; margin-bottom: -15px; color: white;'>Bien!</p><p style='font-size: 14px; color: white;'>Superaste tu marca de ayer</p>";
 			} elseif ($hoy == $ayer && $hoy != 0 && $ayer != 0) {
 		echo "Vamos, una más y a la casa!";
 		echo "<br />";

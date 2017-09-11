@@ -33,7 +33,6 @@ echo "<br />";
 
 		<div id="container">
 
-			
 			<!--Código jQuery -->
 				<script>
 					$(document).ready(function() {

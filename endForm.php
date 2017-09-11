@@ -34,8 +34,8 @@ $resultE = mysqli_query($connect, $kmEnd);
 			<div id="iniciar">
 				<?php 
 				echo "<br />";
-				echo '<a href="ini.php"><button>Iniciar Nueva Sesión</button></a>';
-				echo "<br />";
+				echo "<a href='ini.php'><button class='btn draw-border'>NUEVA SESIÓN</button></a>";
+				echo '<br />';
 				?>
 			</div>
 		</div>

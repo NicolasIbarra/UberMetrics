@@ -1,0 +1,9 @@
+.btn {
+  position: relative;
+  width: 60%;
+  height: 50px;
+  background-color: #EDEDED;
+  border: none;
+  font-family: Quicksand;
+  font-size: 15px;
+}
