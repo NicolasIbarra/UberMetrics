@@ -22,25 +22,15 @@ $resultE = mysqli_query($connect, $kmEnd);
 		<div id="container">
 
 			<?php
-				echo "<div id='container'>Dato fue insertado correctamente</div>";
 				echo "<br />";
-				echo "Felicitaciones! Has terminado tu sesión.";
+				echo "Felicitaciones!<br />";
+				echo "Has terminado tu sesión";
 			?>
-			<!--Código jQuery -->
-				<script>
-					$(document).ready(function() {
-						$('#boton').click(function(){
-							$('#boton').toggleClass('highlight');
-							$('#resumen').animate({
-								height: 'toggle'
-							}, 200);
-						});
-					});
-				</script>
-			<button id="boton">Ver Resumen</button>
-			<div id="resumen" style="display: none">
+			<br />
+			<div id="resumen">
 				<?php resumenTotal(); ?>
 			</div>
+
 			<div id="iniciar">
 				<?php 
 				echo "<br />";
