@@ -36,3 +36,22 @@ form {
 	margin-top: 0;
 	margin-bottom: 0;
 }
+
+input {
+	position: relative;
+	width: 70%;
+	padding: 10px;
+	height: 20px;
+	margin: 5px;
+	border-radius: 7px;
+}
+
+#submit {
+	position: relative;
+	background-color: grey;
+	color: white;
+	height: 40px;
+	border-radius: 7px;
+	padding: 0;
+	width: 78%;
+}

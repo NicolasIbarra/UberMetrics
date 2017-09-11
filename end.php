@@ -14,11 +14,11 @@ headWeb();
 			<h3>Término Sesión</h3>
 
 			<form action="endForm.php" method="post">
-				<input type="text" name="kmEnd" placeholder="km final..." />
+				<input type="text" name="kmEnd" placeholder="   km final..." />
 				<br>
-				<input type="text" name="cashEnd" placeholder="cash final..." />
+				<input type="text" name="cashEnd" placeholder="   cash final..." />
 				<br>
-				<input type="submit" value="enviar" />
+				<input id="submit" type="submit" value="enviar" />
 			</form>
 
 		</div>

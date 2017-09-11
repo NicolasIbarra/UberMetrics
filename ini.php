@@ -9,15 +9,16 @@ headWeb();
 
 	<body>
 		<div id="container">
+			
 			<h1>Uberytics</h1>
 			<h3>Inicio Sesión</h3>
 
 			<form action="iniForm.php" method="post">
-				<input type="text" name="kmIni" placeholder="km inicial..." />
+				<input type="text" name="kmIni" placeholder="   km inicial..." />
 				<br>
-				<input type="text" name="cashIni" placeholder="cash inicial..." />
+				<input type="text" name="cashIni" placeholder="   cash inicial..." />
 				<br>
-				<input type="submit" value="enviar" />
+				<input id="submit" type="submit" value="enviar" />
 			</form>
 		</div>
 	</body>
