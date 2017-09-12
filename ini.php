@@ -18,7 +18,7 @@ headWeb();
 				<br>
 				<input type="text" name="cashIni" placeholder="   cash inicial..." />
 				<br>
-				<input id="submit" type="submit" value="enviar" />
+				<input class="btn" type="submit" value="enviar" />
 			</form>
 		</div>
 	</body>

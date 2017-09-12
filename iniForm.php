@@ -37,24 +37,24 @@ echo "<br />";
 				<script>
 					$(document).ready(function() {
 						$('#boton').click(function(){
-							$('#boton').toggleClass('highlight');
 							$('#resumen').animate({
 								height: 'toggle'
 							}, 200);
 						});
 					});
 				</script>
-			<button id="boton">Ver Resumen</button>
+			<input type="submit" class="btn" id="boton" value="ver"/>
 			<div id="resumen" style="display: none">
 				<?php resumenTotal(); ?>
 			</div>
 			<div id="iniciar">
 				<?php 
 				echo "<br />";
-				echo '<a href="end.php"><button>Finalizar</button></a>';
+				echo '<input type="submit" class="btn" value="Finalizar" />';
 				echo "<br />";
 				?>
 			</div>
+		
 		</div>
 
 </html>
